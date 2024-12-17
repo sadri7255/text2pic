@@ -4,6 +4,12 @@ let img = new Image();
 let currentImageSrc = 'base.jpg';
 let isTemplateLoaded = false;
 
+// تنظیمات پیش‌فرض
+const defaultFont = 'Samim';
+const defaultFontSize = 65;
+const defaultLineHeight = 30;
+const defaultFontColor = '#000000';
+
 img.src = currentImageSrc;
 img.onload = () => drawImage();
 
@@ -31,10 +37,10 @@ function drawImage() {
 
 function addTextToImage() {
   const text = document.getElementById('textInput').value;
-  const fontSize = document.getElementById('fontSize').value;
-  const fontColor = document.getElementById('fontColor').value;
-  const fontFamily = document.getElementById('fontSelect').value;
-  const lineHeight = document.getElementById('lineHeight').value;
+  const fontSize = document.getElementById('fontSize').value || defaultFontSize;
+  const fontColor = document.getElementById('fontColor').value || defaultFontColor;
+  const fontFamily = document.getElementById('fontSelect').value || defaultFont;
+  const lineHeight = document.getElementById('lineHeight').value || defaultLineHeight;
 
   drawImage();
 
@@ -70,9 +76,11 @@ function loadTemplate(template) {
 }
 
 function applySettings() {
-  const fontSize = document.getElementById('fontSize').value;
-  const fontColor = document.getElementById('fontColor').value;
-  const fontFamily = document.getElementById('fontSelect').value;
+  const fontSize = document.getElementById('fontSize').value || defaultFontSize;
+  const fontColor = document.getElementById('fontColor').value || defaultFontColor;
+  const fontFamily = document.getElementById('fontSelect').value || defaultFont;
+  const lineHeight = document.getElementById('lineHeight').value || defaultLineHeight;
+
   ctx.font = `${fontSize}px ${fontFamily}`;
   ctx.fillStyle = fontColor;
   ctx.textAlign = 'center';
