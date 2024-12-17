@@ -1,5 +1,19 @@
+@font-face {
+  font-family: 'Samim';
+  src: url('https://fonts.gstatic.com/s/samim/v8/6xKvdShBP0b-5eDS4O0bfrIB.woff2') format('woff2'),
+       url('https://fonts.gstatic.com/s/samim/v8/6xKvdShBP0b-5eDS4O0bfrIB.woff') format('woff'),
+       url('https://fonts.gstatic.com/s/samim/v8/6xKvdShBP0b-5eDS4O0bfrIB.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('https://fonts.gstatic.com/s/vazir/v7/7hSTVOFvtjDqsdB5eDgjYI.woff2') format('woff2'),
+       url('https://fonts.gstatic.com/s/vazir/v7/7hSTVOFvtjDqsdB5eDgjYI.woff') format('woff'),
+       url('https://fonts.gstatic.com/s/vazir/v7/7hSTVOFvtjDqsdB5eDgjYI.ttf') format('truetype');
+}
+
 body {
-  font-family: 'BYekan', 'Samim', 'Parastoo', 'Sahel', 'Shabnam', 'Tanha', 'Vazir', 'Yekan', sans-serif;
+  font-family: 'Samim', 'Vazir', 'Parastoo', 'Sahel', 'Shabnam', 'Tanha', 'Yekan', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -28,7 +42,7 @@ h1 {
 }
 
 textarea, input, select, button {
-  font-family: 'BYekan', 'Samim', 'Parastoo', 'Sahel', 'Shabnam', 'Tanha', 'Vazir', 'Yekan', sans-serif;
+  font-family: 'Samim', 'Vazir', 'Parastoo', 'Sahel', 'Shabnam', 'Tanha', 'Yekan', sans-serif;
   padding: 10px;
   margin: 10px 0;
   border: none;
