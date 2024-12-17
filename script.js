@@ -6,8 +6,8 @@ let isTemplateLoaded = false;
 
 // تنظیمات پیش‌فرض
 const defaultFont = 'Samim';
-const defaultFontSize = 30;
-const defaultLineHeight = 18;
+const defaultFontSize = 65;
+const defaultLineHeight = 30;
 const defaultFontColor = '#000000';
 
 img.src = currentImageSrc;
