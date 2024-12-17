@@ -1,15 +1,17 @@
 @font-face {
   font-family: 'Samim';
-  src: url('https://fonts.gstatic.com/s/samim/v8/6xKvdShBP0b-5eDS4O0bfrIB.woff2') format('woff2'),
-       url('https://fonts.gstatic.com/s/samim/v8/6xKvdShBP0b-5eDS4O0bfrIB.woff') format('woff'),
-       url('https://fonts.gstatic.com/s/samim/v8/6xKvdShBP0b-5eDS4O0bfrIB.ttf') format('truetype');
+  src: url('fonts/Samim.eot'); /* مسیر فایل محلی */
+  src: url('fonts/Samim.woff2') format('woff2'), /* مسیر فایل محلی */
+       url('fonts/Samim.woff') format('woff'), /* مسیر فایل محلی */
+       url('fonts/Samim.ttf') format('truetype'); /* مسیر فایل محلی */
 }
 
 @font-face {
   font-family: 'Vazir';
-  src: url('https://fonts.gstatic.com/s/vazir/v7/7hSTVOFvtjDqsdB5eDgjYI.woff2') format('woff2'),
-       url('https://fonts.gstatic.com/s/vazir/v7/7hSTVOFvtjDqsdB5eDgjYI.woff') format('woff'),
-       url('https://fonts.gstatic.com/s/vazir/v7/7hSTVOFvtjDqsdB5eDgjYI.ttf') format('truetype');
+  src: url('fonts/Vazir.eot'); /* مسیر فایل محلی */
+  src: url('fonts/Vazir.woff2') format('woff2'), /* مسیر فایل محلی */
+       url('fonts/Vazir.woff') format('woff'), /* مسیر فایل محلی */
+       url('fonts/Vazir.ttf') format('truetype'); /* مسیر فایل محلی */
 }
 
 body {
