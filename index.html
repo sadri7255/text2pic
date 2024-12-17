@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>افزودن متن به تصویر</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>افزودن متن به تصویر</h1>
+    
+    <textarea id="textInput" rows="3" placeholder="متن خود را اینجا بنویسید..."></textarea>
+
+    <button onclick="toggleSettings()">تنظیمات ⚙️</button>
+
+    <div id="settingsPanel" class="settings">
+      <label>
+        انتخاب فونت:
+        <select id="fontSelect">
+          <option value="BYekan">B Yekan</option>
+          <option value="Parastoo">Parastoo</option>
+          <option value="Sahel">Sahel</option>
+          <option value="Samim">Samim</option>
+          <option value="Shabnam">Shabnam</option>
+          <option value="Tanha">Tanha</option>
+          <option value="Vazir">Vazir</option>
+          <option value="yekan">yekan</option>
+        </select>
+      </label>
+
+      <label>
+        اندازه فونت:
+        <input type="number" id="fontSize" value="24" min="10" max="100">
+      </label>
+
+      <label>
+        رنگ متن:
+        <input type="color" id="fontColor" value="#000000">
+      </label>
+
+      <label>
+        فاصله بین خطوط:
+        <input type="number" id="lineHeight" value="10" min="0" max="100">
+      </label>
+
+      <label>
+        بارگذاری تصویر:
+        <input type="file" id="imageInput" accept="image/*">
+      </label>
+    </div>
+
+    <div class="templates">
+      <button class="template-button notify" onclick="loadTemplate('notify.jpg')">اطلاع رسانی</button>
+      <button class="template-button absence" onclick="loadTemplate('absence.jpg')">اعلام غیبت</button>
+      <button class="template-button consult" onclick="loadTemplate('consult.jpg')">پیام مشاور</button>
+      <button class="template-button training" onclick="loadTemplate('training.jpg')">پیام پرورشی</button>
+    </div>
+
+    <div class="controls">
+      <button onclick="addTextToImage()">افزودن متن</button>
+      <button onclick="downloadImage()">دانلود تصویر</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
