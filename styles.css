@@ -1,21 +1,18 @@
 @font-face {
   font-family: 'Samim';
-  src: url('fonts/Samim.eot'); /* مسیر فایل محلی */
-  src: url('fonts/Samim.woff2') format('woff2'), /* مسیر فایل محلی */
-       url('fonts/Samim.woff') format('woff'), /* مسیر فایل محلی */
-       url('fonts/Samim.ttf') format('truetype'); /* مسیر فایل محلی */
+  src: url('fonts/Samim.eot');
+  src: url('fonts/Samim.woff2') format('woff2'),
+       url('fonts/Samim.woff') format('woff'),
+       url('fonts/Samim.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Vazir';
-  src: url('fonts/Vazir.eot'); /* مسیر فایل محلی */
-  src: url('fonts/Vazir.woff2') format('woff2'), /* مسیر فایل محلی */
-       url('fonts/Vazir.woff') format('woff'), /* مسیر فایل محلی */
-       url('fonts/Vazir.ttf') format('truetype'); /* مسیر فایل محلی */
+  font-family: 'Vazirmatn';
+  src: url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
 }
 
 body {
-  font-family: 'Samim', 'Vazir', 'Parastoo', 'Sahel', 'Shabnam', 'Tanha', 'Yekan', sans-serif;
+  font-family: 'Samim', 'Vazirmatn', 'Parastoo', 'Sahel', 'Shabnam', 'Tanha', 'Yekan', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -44,7 +41,7 @@ h1 {
 }
 
 textarea, input, select, button {
-  font-family: 'Samim', 'Vazir', 'Parastoo', 'Sahel', 'Shabnam', 'Tanha', 'Yekan', sans-serif;
+  font-family: 'Samim', 'Vazirmatn', 'Parastoo', 'Sahel', 'Shabnam', 'Tanha', 'Yekan', sans-serif;
   padding: 10px;
   margin: 10px 0;
   border: none;
