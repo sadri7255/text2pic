@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>افزودن متن به تصویر</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- افزودن لینک فونت Vazirmatn از Google Fonts -->
+  <!-- افزودن لینک فونت‌ها از Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IRANSans:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -22,19 +29,20 @@
       <label>
         انتخاب فونت:
         <select id="fontSelect">
-          <option value="Samim">Samim</option>
+          <option value="IRANSans">IRANSans</option>
           <option value="Vazirmatn">Vazirmatn</option>
-          <option value="Parastoo">Parastoo</option>
-          <option value="Sahel">Sahel</option>
-          <option value="Shabnam">Shabnam</option>
-          <option value="Tanha">Tanha</option>
-          <option value="Yekan">Yekan</option>
+          <option value="Amiri">Amiri</option>
+          <option value="Rubik">Rubik</option>
+          <option value="Cairo">Cairo</option>
+          <option value="IBM Plex Sans Arabic">IBM Plex Sans Arabic</option>
+          <option value="Lalezar">Lalezar</option>
+          <option value="Noto Sans Arabic">Noto Sans Arabic</option>
         </select>
       </label>
 
       <label>
         اندازه فونت:
-        <input type="number" id="fontSize" value="65" min="10" max="100">
+        <input type="number" id="fontSize" value="40" min="10" max="100">
       </label>
 
       <label>
@@ -44,7 +52,7 @@
 
       <label>
         فاصله بین خطوط:
-        <input type="number" id="lineHeight" value="30" min="0" max="100">
+        <input type="number" id="lineHeight" value="18" min="0" max="100">
       </label>
 
       <label>
@@ -61,8 +69,8 @@
     </div>
 
     <div class="controls">
-      <button onclick="addTextToImage()">افزودن متن</button>
-      <button onclick="downloadImage()">دانلود تصویر</button>
+      <button class="add-text-button" onclick="addTextToImage()">افزودن متن</button>
+      <button class="download-button" onclick="downloadImage()">دانلود تصویر</button>
     </div>
 
     <canvas id="canvas"></canvas>

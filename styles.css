@@ -1,9 +1,6 @@
 @font-face {
-  font-family: 'Samim';
-  src: url('fonts/Samim.eot');
-  src: url('fonts/Samim.woff2') format('woff2'),
-       url('fonts/Samim.woff') format('woff'),
-       url('fonts/Samim.ttf') format('truetype');
+  font-family: 'IRANSans';
+  src: url('https://fonts.googleapis.com/css2?family=IRANSans:wght@100..900&display=swap');
 }
 
 @font-face {
@@ -11,8 +8,38 @@
   src: url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
 }
 
+@font-face {
+  font-family: 'Amiri';
+  src: url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+}
+
+@font-face {
+  font-family: 'Lalezar';
+  src: url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+}
+
+@font-face {
+  font-family: 'Noto Sans Arabic';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
+}
+
 body {
-  font-family: 'Samim', 'Vazirmatn', 'Parastoo', 'Sahel', 'Shabnam', 'Tanha', 'Yekan', sans-serif;
+  font-family: 'IRANSans', 'Vazirmatn', 'Amiri', 'Rubik', 'Cairo', 'IBM Plex Sans Arabic', 'Lalezar', 'Noto Sans Arabic', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -22,6 +49,7 @@ body {
   align-items: center;
   min-height: 100vh;
   color: #fff;
+  direction: rtl;
 }
 
 h1 {
@@ -41,19 +69,20 @@ h1 {
 }
 
 textarea, input, select, button {
-  font-family: 'Samim', 'Vazirmatn', 'Parastoo', 'Sahel', 'Shabnam', 'Tanha', 'Yekan', sans-serif;
+  font-family: 'IRANSans', 'Vazirmatn', 'Amiri', 'Rubik', 'Cairo', 'IBM Plex Sans Arabic', 'Lalezar', 'Noto Sans Arabic', sans-serif;
   padding: 10px;
   margin: 10px 0;
   border: none;
   border-radius: 5px;
   width: 100%;
+  direction: rtl;
 }
 
 textarea {
   resize: vertical;
   background-color: #616161;
   color: #fff;
-  text-align: center;
+  text-align: right;
 }
 
 input, select, button {
@@ -63,7 +92,7 @@ input, select, button {
 
 .controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
   margin-top: 20px;
 }
@@ -77,8 +106,16 @@ canvas {
   background-color: #f9f9f9;
 }
 
-button {
-  background-color: #ff9800;
+button.add-text-button {
+  background-color: #4caf50; /* سبز */
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-grow: 1;
+}
+
+button.download-button {
+  background-color: #2196f3; /* آبی */
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -93,7 +130,7 @@ button:hover {
 label {
   display: block;
   margin-bottom: 5px;
-  text-align: left;
+  text-align: right;
   color: #fff;
 }
 
