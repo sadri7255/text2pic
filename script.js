@@ -35,6 +35,17 @@ function drawImage() {
   ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 }
 
+function applySettings() {
+  const fontSize = document.getElementById('fontSize').value || defaultFontSize;
+  const fontColor = document.getElementById('fontColor').value || defaultFontColor;
+  const fontFamily = document.getElementById('fontSelect').value || defaultFont;
+  const lineHeight = document.getElementById('lineHeight').value || defaultLineHeight;
+
+  ctx.font = `${fontSize}px ${fontFamily}`;
+  ctx.fillStyle = fontColor;
+  ctx.textAlign = 'center';
+}
+
 function addTextToImage() {
   const text = document.getElementById('textInput').value;
   const fontSize = document.getElementById('fontSize').value || defaultFontSize;
@@ -75,13 +86,11 @@ function loadTemplate(template) {
   };
 }
 
-function applySettings() {
-  const fontSize = document.getElementById('fontSize').value || defaultFontSize;
-  const fontColor = document.getElementById('fontColor').value || defaultFontColor;
-  const fontFamily = document.getElementById('fontSelect').value || defaultFont;
-  const lineHeight = document.getElementById('lineHeight').value || defaultLineHeight;
-
-  ctx.font = `${fontSize}px ${fontFamily}`;
-  ctx.fillStyle = fontColor;
-  ctx.textAlign = 'center';
-}
+// اعمال تنظیمات پیش‌فرض هنگام بارگذاری صفحه
+window.onload = () => {
+  document.getElementById('fontSelect').value = defaultFont;
+  document.getElementById('fontSize').value = defaultFontSize;
+  document.getElementById('fontColor').value = defaultFontColor;
+  document.getElementById('lineHeight').value = defaultLineHeight;
+  applySettings();
+};
